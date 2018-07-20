@@ -1,3 +1,33 @@
+/**************** TEVO TORNADO EASY CONFIG ***************************
+            Original idea by jb.github@rcairgallery.com
+             Modified by ME
+
+    The latest version of Jim's original file will always be found at:
+          https://github.com/JimBrown/MarlinTarantula
+
+    The latest version of this file (and complete firmware) will always
+  be found at:
+          https://github.com/edgary777/MarlinTornado
+
+    This is an attempt to create a simple configuration for as many
+  different Tevo Tornado variants as possible.  This will always be
+  a work in progress. Email me if you have any questions, suggestions,
+  or if you encounter problems when using Easy Config.
+
+    This is a Marlin 1.1.x configuration file. I will update this as
+  new versions of Marlin are released.
+
+    NOTE: Sanity check should still work and should not show any errors.
+      Please report any errors.  Thank you.
+
+    NOTE: Don't forget to do an M502 followed by an M500 any time you
+      upload the firmware.
+
+    See https://youtu.be/-sQ8p00pG5E for an excellent tutorial on using
+    this firmware.
+
+***********************************************************************/
+
 /**
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
