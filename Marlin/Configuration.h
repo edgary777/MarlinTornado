@@ -38,7 +38,7 @@
 #define SDSUPPORT
 //#define CHANGE_Y_DIRECTION        // If your bed homes in the wrong direction (it should move front to back) enable this.
 //#define CHANGE_X_DIRECTION        // If your X carriage homes in the wrong direction (it should move right to left) enable this.
-//#define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
+#define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
 //#define HOTEND_E3DV6              // Genuine E3D v6 hotend.
 //#define FULL_GRAPHIC_SMART        // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The
                                     // stock controller is a RepRap Discount Smart Controller)
@@ -51,11 +51,11 @@
  * Offset from endpoints to get nozzle to 0,0 (front/left of bed)
  * (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
  */
-#define NOZZLE_X          -2  //-7 It is actually 12, but because of the dual nozzle the bed can only move to roughly 196/200,
-                             // so those 4 + 1 safety extra will be removed from the offset so the space is evenly spaced for the nozzles.
-#define NOZZLE_Y          -41 //-41
+#define NOZZLE_X          0
 
-#define NOZZLE_Z          -4.7
+#define NOZZLE_Y          0
+
+#define NOZZLE_Z          0
 /**
  * Minimal Z height (in mm) before homing (G28) for Z clearance above the bed, clamps, ...
  */
@@ -65,14 +65,14 @@
  * Primary Extruder steps per mm (plugged in to E0 port on controller)
  * (How to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
-#define E0_STEPS      403 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
+#define E0_STEPS      411.5   // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
 #define CHANGE_E0_DIRECTION   // If your extruder is going backwards, enable this.
 
 /**
  * Z Axis steps per mm (Default for stock lead screw is 1600)
  * If you install a lead screw with a different pitch and/or lead, change this
  */
-#define Z_STEPS      1600 // Stock lead screw
+#define Z_STEPS      399.29 // Stock lead screw
 
 /**
  * XY Axis steps per mm (Default for belt is 79.76 on both axis)
@@ -868,7 +868,7 @@
 #define DEFAULT_XJERK                 10.0
 #define DEFAULT_YJERK                 10.0
 #define DEFAULT_ZJERK                  0.4
-#define DEFAULT_EJERK                  4.0
+#define DEFAULT_EJERK                  2.0
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1119,7 +1119,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 200
+#define Z_MAX_POS 400
 
 /**
  * Software Endstops
